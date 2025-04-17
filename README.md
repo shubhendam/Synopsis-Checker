@@ -75,4 +75,23 @@ streamlit run app.py
    ```
 3. We then compute cosine similarity between each sentence and the paragraph’s average to find the most meaningful sentences.
 4. The top sentences are dynamically selected based on paragraph size to create a compressed summary rich in facts and structure.
-5. This summary (instead of the full article) is sent to the LLM alongside the user-uploaded synopsis.
+5. This summary (instead of the full article) is sent to the LLM alongside the user-uploaded synopsis to helps reduce token consumption and avoids overwhelming the model with irrelevant data, ensuring focused, efficient evaluations.
+
+### 4.2 Privacy Protection Strategy
+**When using OpenAI or other third-party APIs, we apply anonymization to the summaries before sending:**
+1. We use spaCy's English NER model to detect sensitive entities.
+2. The following types are replaced: {"PERSON", "ORG", "GPE", "DATE"}
+3. Replacements are consistent using numbered placeholders like PERSON_X1, ORG_X2, etc.
+   ```python
+   if ent_type in NER_TYPES_TO_REPLACE:
+    key = f"{ent_type}::{token.text}"
+    if key not in replacement_map:
+        entity_counters[ent_type] += 1
+        replacement_map[key] = f"{ent_type}_X{entity_counters[ent_type]}"
+   ```
+   **Example output**
+   ```text
+   Original: Elon Musk visited India in January 2024.
+   Anonymized: PERSON_X1 visited GPE_X1 in DATE_X1.
+   ```
+   This ensures that no identifiable data ever leaves the local machine when calling external LLM APIs.
