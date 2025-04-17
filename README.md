@@ -95,3 +95,16 @@ streamlit run app.py
    Anonymized: PERSON_X1 visited GPE_X1 in DATE_X1.
    ```
    This ensures that no identifiable data ever leaves the local machine when calling external LLM APIs.
+
+
+## 5. Rating Parameters
+Each synopsis is evaluated based on:
+1. **Content Coverage**: How well it captures the main ideas and details from the article.
+2. **Clarity**: The readability and structure of the synopsis.
+3. **Coherence**: Logical flow and connection between sentences and sections.
+4. **Factual Consistency**: Whether the facts mentioned are accurate and consistent with the source article.
+
+
+## 6. Future Enhancements
+1. Support for .docx files in addition to .txt and .pdf
+2. Add AI hallucination checker for factual consistency
