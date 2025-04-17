@@ -19,3 +19,10 @@ git clone https://github.com/your-username/Synopsis_Checker.git
 cd Synopsis_Checker
 python -m venv venv
 venv\Scripts\activate
+
+#### macOS/Linux
+```bash
+git clone https://github.com/your-username/Synopsis_Checker.git
+cd Synopsis_Checker
+python3 -m venv venv
+source venv/bin/activate
