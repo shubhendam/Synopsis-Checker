@@ -1,0 +1,7 @@
+The article highlights India's AI strategy in response to the global AI race, emphasizing trust, independence, and inclusion. It acknowledges the disruptive impact of advancements like China's DeepSeek AI model, which altered markets and raised concerns over data privacy and security globally.
+
+India seeks to shift from focusing solely on speed to adopting a more strategic and sustainable approach, as reflected in initiatives like the IndiaAI Mission, AIKosha, and collaborations between local companies like Krutrim and industry leaders like Reliance Jio. These efforts aim to democratize access to AI, develop infrastructure locally, and support the use of AI in Indian languages to ensure inclusivity.
+
+Central to India's strategy is the pursuit of data sovereignty through measures like producing domestic AI chips by 2027, ensuring critical national data remains secure. India envisions AI as a public good, aiming to bridge the digital divide and make AI tools accessible for students, entrepreneurs, and communities in rural areas.
+
+The strategy is grounded in cautious optimism, learning from historical patterns of speculative frenzies in technology revolutions, with a focus on building robust infrastructure, skilling the workforce, fostering research and innovation, ensuring affordability, and prioritizing ethical governance. India's ultimate goal is to lead through principled and thoughtful AI innovation, showcasing a model for responsible and inclusive technology management.

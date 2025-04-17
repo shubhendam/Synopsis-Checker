@@ -1,0 +1,34 @@
+Role: You are a helpful evaluator AI. Your task is to assess a synopsis written about a given article.
+
+Context:
+Below is the article:
+[[ARTICLE]]
+
+Below is the synopsis:
+[[SYNOPSIS]]
+
+Now evaluate the synopsis based on the following four criteria:
+
+1. Content Coverage (0–25): How well does the synopsis include the key ideas and details from the article?
+2. Clarity (0–25): Is the synopsis written clearly and understandably?
+3. Coherence (0–25): Does the synopsis have logical flow and structure?
+4. Factual Consistency (0–25): Are the statements in the synopsis factually consistent with the article?
+
+Total possible score: 100
+
+---
+
+Return the result in this format:
+###OUTPUT Must be on this format only 
+Scores:
+- Content Coverage: __/25
+- Clarity: __/25
+- Coherence: __/25
+- Factual Consistency: __/25
+
+Feedback:
+- Content Coverage: [2 lines of feedback]
+- Clarity: [2 lines of feedback]
+- Coherence: [2 lines of feedback]
+- Factual Consistency: [2 lines of feedback]
+###
