@@ -41,3 +41,19 @@ python -m spacy download en_core_web_sm
 - [Nomic Embedding v1.5 (GGUF)](https://huggingface.co/nomic-ai/nomic-embed-text-v1.5-GGUF/resolve/main/nomic-embed-text-v1.5.f16.gguf?download=true)
 
 Place both `.gguf` files in the `models/` directory.
+
+
+## 3. Demo
+
+Run the app with:
+
+```bash
+streamlit run app.py
+```
+### 💻 In the UI: 
+
+1. Select LLM mode: **Local** or **ChatGPT**
+2. Upload an article (`.txt` or `.pdf`) and its synopsis (`.txt`)
+3. Click **Analyze** to generate scores and feedback. 
+
+5.   Demo Video: assets/demo.mp4
