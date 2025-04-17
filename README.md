@@ -15,7 +15,7 @@ To run this app locally on your system, follow these steps:
 
 #### Windows
 ```bash
-git clone https://github.com/your-username/Synopsis_Checker.git
+git clone https://github.com/shubhendam/Synopsis_Checker.git
 cd Synopsis_Checker
 python -m venv venv
 venv\Scripts\activate
@@ -23,7 +23,7 @@ venv\Scripts\activate
 
 #### macOS/Linux
 ```bash
-git clone https://github.com/your-username/Synopsis_Checker.git
+git clone https://github.com/shubhendam/Synopsis_Checker.git
 cd Synopsis_Checker
 python3 -m venv venv
 source venv/bin/activate
