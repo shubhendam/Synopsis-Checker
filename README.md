@@ -50,10 +50,22 @@ Run the app with:
 ```bash
 streamlit run app.py
 ```
-### 💻 In the UI: 
+### In the UI: 
 
 1. Select LLM mode: **Local** or **ChatGPT**
 2. Upload an article (`.txt` or `.pdf`) and its synopsis (`.txt`)
 3. Click **Analyze** to generate scores and feedback. 
 
 ![Demo in Action](assets/demo.gif)
+
+
+## 4. Scoring Methodology & Privacy Protection Strategy
+
+###4.1 Scoring Methodology
+We generate an intelligent semantic summary of the article before sending it to the LLM for evaluation:
+
+1. **Breaking the Article into Sentences**  
+   We first break the article into paragraphs, and then into individual sentences:
+   ```python
+   sentences = [sent.text.strip() for sent in nlp(para).sents if sent.text.strip()]
+   ```
