@@ -61,11 +61,18 @@ streamlit run app.py
 
 ## 4. Scoring Methodology & Privacy Protection Strategy
 
-###4.1 Scoring Methodology
-We generate an intelligent semantic summary of the article before sending it to the LLM for evaluation:
+### 4.1 Scoring Methodology
 
-1. **Breaking the Article into Sentences**  
-   We first break the article into paragraphs, and then into individual sentences:
+**We generate an intelligent semantic summary of the article before sending it to the LLM for evaluation:**
+
+1. We first break the article into paragraphs, and then into individual sentences:
    ```python
    sentences = [sent.text.strip() for sent in nlp(para).sents if sent.text.strip()]
    ```
+2. We convert these sentences into vector embeddings and compute an average embedding to capture the paragraph's overall meaning.
+   ```python
+   avg_embedding = [sum(col) / len(col) for col in zip(*sentence_embeddings)]
+   ```
+3. We then compute cosine similarity between each sentence and the paragraph’s average to find the most meaningful sentences.
+4. The top sentences are dynamically selected based on paragraph size to create a compressed summary rich in facts and structure.
+5. This summary (instead of the full article) is sent to the LLM alongside the user-uploaded synopsis.
