@@ -56,7 +56,7 @@ streamlit run app.py
 2. Upload an article (`.txt` or `.pdf`) and its synopsis (`.txt`)
 3. Click **Analyze** to generate scores and feedback. 
 
-[![Demo:](https://img.youtube.com/vi/VJfqVIYfrfc/0.jpg)](https://www.youtube.com/watch?v=VJfqVIYfrfc)
+[Watch Demo](https://www.youtube.com/watch?v=VJfqVIYfrfc)
 
 
 ## 4. Scoring Methodology & Privacy Protection Strategy
