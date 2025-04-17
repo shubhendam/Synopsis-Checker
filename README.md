@@ -1,6 +1,6 @@
-# 🧠 Synopsis Checker
+# Synopsis Checker
 
-## 1. About the App
+## 1. Synopsis Checker
 
 **Synopsis Checker** is a privacy-focused Gen AI powered application designed to quickly evaluate the quality of a synopsis based on four key properties: **Content Coverage**, **Clarity**, **Coherence**, and **Factual Consistency**.  
 It supports both **local LLM inference using GGUF models** and **OpenAI ChatGPT API** — simply toggle between the two within the UI.
