@@ -1,0 +1,14 @@
+langchain
+langchain-community
+llama-index
+transformers
+sentence-transformers
+llama-cpp-python
+scikit-learn
+torch
+streamlit
+pdfplumber
+spacy
+pandas
+openai 
+python-dotenv
