@@ -11,7 +11,7 @@ It supports both **local LLM inference using GGUF models** and **OpenAI ChatGPT 
 
 To run this app locally on your system, follow these steps:
 
-### 📁 Clone and Setup Virtual Environment
+### Clone and Setup Virtual Environment
 
 #### Windows
 ```bash
@@ -27,4 +27,10 @@ git clone https://github.com/your-username/Synopsis_Checker.git
 cd Synopsis_Checker
 python3 -m venv venv
 source venv/bin/activate
+```
+
+#### Install Dependencies
+```bash
+pip install -r requirements.txt
+python -m spacy download en_core_web_sm
 ```
