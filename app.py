@@ -13,7 +13,7 @@ st.title("Synopsis Checker")
 st.markdown("Upload an **article** and its **synopsis** to evaluate how well it summarizes the content.")
 
 #mode seletor
-mode= st.selectbox("Choose LLM Mode:",  ["Local", "ChatGPT"], index=0)
+mode= st.selectbox("LLM Mode:",  ["Local", "ChatGPT"], index=0)
 
 #upload article and syonpsis
 article = st.file_uploader("Upload the main article (.txt or .pdf)", type=["txt", "pdf"])
